@@ -1,0 +1,112 @@
+/* --- Kustomisasi Global --- */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- Logo Bulat (Navbar)  --- */
+.logo-bulat {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #0d6efd;
+}
+
+/* --- Kolom Pencarian Dirapikan  --- */
+.search-box {
+    width: 40%;
+}
+.search-box .form-control {
+    border-radius: 20px 0 0 20px;
+}
+.search-box .btn {
+    border-radius: 0 20px 20px 0;
+}
+.search-box .form-control:focus {
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
+/* --- Navigasi Ikon Tanpa Garis & Teks Di Bawah  --- */
+.nav-custom-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 500;
+    color: #6c757d !important;
+    transition: color 0.2s ease;
+    padding: 0 5px !important;
+}
+
+.nav-custom-link i {
+    font-size: 1.4rem; /* Ukuran ikon diperbesar */
+    margin-bottom: -2px;
+}
+
+.nav-custom-link:hover, 
+.nav-custom-link.active {
+    color: #0d6efd !important; /* Warna berubah saat aktif/hover */
+}
+
+/* --- Ikon Keranjang Spesifik  --- */
+.nav-icon-only {
+    color: #495057 !important;
+}
+.nav-icon-only:hover {
+    color: #0d6efd !important;
+}
+
+/* --- Profil Bulat Berfoto [cite: 19] --- */
+.profile-bulat {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e0e0e0;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+.profile-bulat:hover {
+    border-color: #0d6efd;
+}
+
+/* --- Efek Dropdown Menu Menu Profil --- */
+.dropdown-menu-item {
+    font-size: 14px;
+    padding: 8px 20px;
+}
+
+/* --- Desain Kartu Produk (Brand)  --- */
+.product-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+.product-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* --- Responsif Mobile --- */
+@media (max-width: 991.98px) {
+    .search-box {
+        width: 100%;
+    }
+    .nav-custom-link {
+        flex-direction: row;
+        font-size: 15px;
+        gap: 15px;
+        padding: 10px 0 !important;
+    }
+    .nav-custom-link i {
+        font-size: 1.3rem;
+    }
+    .navbar-nav {
+        align-items: flex-start !important;
+    }
+}
